@@ -14,7 +14,7 @@ import openai
 import csv
 import time
 
-openai.api_key = "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"
+openai.api_key = "XXXXXXXXXX"
 
 keywordsFile = open("old/lista-keywords.txt", "r", encoding='utf-8')
 
