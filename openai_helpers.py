@@ -4,7 +4,7 @@ import openai
 import re
 import time
 
-openai.api_key = "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"
+openai.api_key = "XXXXXXXXXXXXX"
 
 def create_content(counter, prompt_file_name, output_file_name):
     print("Leyendo prompts...")
