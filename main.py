@@ -13,8 +13,10 @@ import os
 import openai
 import csv
 import time
+from dotenv import load_dotenv
+load_dotenv()
 
-openai.api_key = "XXXXXXXXXX"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 keywordsFile = open("old/lista-keywords.txt", "r", encoding='utf-8')
 

@@ -3,8 +3,11 @@ import csv
 import openai
 import re
 import time
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-openai.api_key = "XXXXXXXXXXXXX"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def create_content(counter, prompt_file_name, output_file_name):
     print("Leyendo prompts...")
